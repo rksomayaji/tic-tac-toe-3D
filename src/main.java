@@ -191,6 +191,7 @@ Zero[gamesZero].allotPosition(rnd.nextInt(3),rnd.nextInt(3),rnd.nextInt(3));
                         Zero[gamesZero].allotPosition(x, y, z);
                         prev = gamesZero;
                         gamesZero++;
+                        player = 'x';
                         System.out.println(x + "," + y + "," + z);
                      }
                 }

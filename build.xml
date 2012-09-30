@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="test" default="compile">
+
+    <property name="classes" value="class" />
+    <property name="source" value="src" />
+    
+    <target name="init">
+        <mkdir dir="${classes}"/>
+    </target>
+    
+    <target name="compile" depends="init">
+        <javac srcdir="${source}" destdir="${classes}"/>
+    </target>
+</project>
