@@ -11,4 +11,11 @@
     <target name="compile" depends="init">
         <javac srcdir="${source}" destdir="${classes}"/>
     </target>
+    
+    <target name="clean">
+        <delete verbose="true">
+            <fileset dir="${classes}" />
+        </delete>
+        <delete dir="${classes}" />
+    </target>
 </project>
